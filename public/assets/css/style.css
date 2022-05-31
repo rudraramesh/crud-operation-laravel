@@ -1,0 +1,67 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    opacity: 0.7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Times New Roman', Times, serif
+}
+.headers{
+    margin-bottom: 0px;
+}
+.navbar .ul-list{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar .ul-list li a{
+    /* background-color: gray; */
+    padding: 5px 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar .ul-list li a:hover{
+    /* background-color: #00f23c; */
+    border-radius: 2px;
+    border-bottom: 1px solid green;
+}
+
+.navbar .ul-list .sab-menu{
+    display: none;
+    margin-left: 0px;
+}
+.navbar .ul-list .sab-menu li a{
+    border: none;
+    padding:5px 10px;
+    line-height: 40px;
+}
+.navbar .ul-list .sab-menu li a:hover{
+    background: rgb(42, 16, 16);
+    border-radius: 2px;
+
+}
+.navbar .ul-list .sab-parent:hover .sab-menu{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+    margin-top: 4px;
+    padding: 0;
+    position: absolute;
+    margin-left: 0;
+    z-index: 1;
+    
+}
+.navbar .ul-list .sab-parent:hover .icons{
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
